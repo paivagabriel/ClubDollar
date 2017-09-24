@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cabelo"
+    tools:context="com.paivadeveloper.clubdollar.activity.PromocaoActivity">
+
+    <ImageView
+        android:id="@+id/promo_img_id"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/btn_border"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        app:cardBackgroundColor="#80000000"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/promo_text_id"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Nome da imagem"
+                android:inputType="text"
+                android:padding="6dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_color"
+                android:textColorHighlight="@color/btn_color"
+                android:textColorHint="@color/btn_color"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="21dp" />
+
+
+            <EditText
+                android:id="@+id/promo_edit_id"
+                android:layout_width="300dp"
+                android:layout_height="41dp"
+                android:layout_below="@+id/promo_text_id"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/btn_border"
+                android:ems="10"
+                android:hint="Nome da Promoção"
+                android:inputType="text"
+                android:padding="6dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_color"
+                android:textColorHighlight="@color/btn_color"
+                android:textColorHint="@color/btn_color" />
+
+
+            <Button
+                android:id="@+id/promo_botao2_id"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/selector_botao"
+                android:text="Cadastrar"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_color"
+                android:layout_below="@+id/promo_edit_id"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/fundo2"
+    tools:context="com.paivadeveloper.clubdollar.activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        app:srcCompat="@drawable/clubdollarlogo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="39dp"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true">
+
+
+        <Button
+            android:id="@+id/btn_adm_entrar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/selector_botao"
+            android:text="Entrar"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_color" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edt_adm_entrar"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/btn_border"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:padding="6dp"
+        android:textAllCaps="false"
+        android:textColor="@color/btn_color"
+        android:textColorHighlight="@color/btn_color"
+        android:textColorHint="@color/btn_color"
+        android:textCursorDrawable="@color/btn_color" />
+
+
+</RelativeLayout>
